@@ -1,0 +1,181 @@
+23-March-2025 15:55:54---Student: ..
+23-March-2025 15:55:54----Code compiles:PASS
+Launch Suite:
+  23-March-2025 15:55:55----exit causes process to terminate with correct return code:OK
+  23-March-2025 15:55:59----Shell message is displayed, uses exit to test:OK
+Result:PASS
+Unknown Command Message:
+  23-March-2025 15:56:03----Unknown command should display corresponding message:NOT OK
+  23-March-2025 15:56:07----Multiple unknown commands:NOT OK
+Result:FAIL
+Long Command Message:
+  23-March-2025 15:56:11----A not-too-long and legal command input is valid:OK
+  23-March-2025 15:56:15----Long command input is invalid:OK
+  23-March-2025 15:56:19----Long command message takes priority:OK
+Result:PASS
+Echo Simple Messages:
+  23-March-2025 15:56:23----Echo of one character displays correctly:OK
+  23-March-2025 15:56:27----Echo of simple message displays correctly:OK
+  23-March-2025 15:56:31----Echo of simple message displays correctly v3:OK
+  23-March-2025 15:56:35----Echo of simple message displays correctly v3:OK
+  23-March-2025 15:56:39----Echo of simple message does not show errors:OK
+Result:PASS
+Echo Special Characters:
+  23-March-2025 15:56:43----Echo of mixed message displays correctly:OK
+  23-March-2025 15:56:47----echo with quotes has no special meaning:OK
+  23-March-2025 15:56:51----echo ignores extra spaces:OK
+Result:PASS
+Multiple Commands:
+  23-March-2025 15:56:55----Two echo commands display correctly:OK
+  23-March-2025 15:56:59----Two echo commands do not show error:OK
+  23-March-2025 15:57:03----Echo commands work while other commands error:OK
+Result:PASS
+Simple variables accesses:
+  23-March-2025 15:57:07----Declare and access a single variable:OK
+  23-March-2025 15:57:09----Declare and access a single variable:OK
+  23-March-2025 15:57:11----Tests for correct evaluation of variable expansions containing only intitialized variables:OK
+  23-March-2025 15:57:13----Tests for correct evaluation of variable expansions containing variables plus plaintext and uninitialized variables:OK
+Result:PASS
+Variable integration with other commands:
+  23-March-2025 15:57:15----Declare a single variable:OK
+  23-March-2025 15:57:17----Declare and access two variables:OK
+Result:PASS
+Custom variable accesses:
+  23-March-2025 15:57:19----Access variables in separate lines:OK
+  23-March-2025 15:57:21----Access variables in separate lines v2:OK
+Result:PASS
+Echo without variables displays plain text:
+  23-March-2025 15:57:23----Variables access with $ is bound to name:OK
+  23-March-2025 15:57:25----Non-existing variable displays as an empty string:OK
+Result:PASS
+Variable values can be redefined:
+  23-March-2025 15:57:27----Variable value is redefined appropriately:OK
+  23-March-2025 15:57:29----Variable value is redefined appropriately v2:OK
+Result:PASS
+Variable formatting edge cases:
+  23-March-2025 15:57:31----Variables accesses separate by the first equal:OK
+  23-March-2025 15:57:33----Variable declaration with spaces is not supported:OK
+Result:PASS
+Advanced tests:
+  23-March-2025 15:57:35----Declare and access 100 variables:OK
+Result:PASS
+correct cat argument setup:
+  23-March-2025 15:57:45----Cat on a file that contains one word:OK
+Result:PASS
+cat correctly reads sample files:
+  23-March-2025 15:57:49----Cat on a file that contains multiple words:OK
+  23-March-2025 15:57:53----Cat on a file that contains multiple lines:OK
+Result:PASS
+correct wc argument setup:
+  23-March-2025 15:57:57----wc on an empty file:OK
+Result:PASS
+wc reports correct counts on sample files:
+  23-March-2025 15:58:01----wc on a file that contains mutliple lines:OK
+  23-March-2025 15:58:05----wc on a file that contains mutliple words in a line:OK
+  23-March-2025 15:58:09----wc on a file that contains blank lines:OK
+Result:PASS
+Sample ls runs:
+  23-March-2025 15:58:13----Create a single sub-directory with a single file:OK
+  23-March-2025 15:58:17----Create a single sub-directory with multiple files:OK
+  23-March-2025 15:58:23----ls a directory:OK
+Result:PASS
+Sample cd runs:
+  23-March-2025 15:58:29----cd into a directory and display the files:OK
+  23-March-2025 15:58:35----cd into a nested directory and display the files:OK
+Result:PASS
+ls error handling:
+  23-March-2025 15:58:41----ls on an invalid path reports an error:NOT OK
+Result:FAIL
+ls handles edge cases correctly:
+  23-March-2025 15:58:45----ls a single file through a variable identifier:NOT OK (TIMEOUT)
+  23-March-2025 15:58:49----Create a single sub-directory, and ls into that directory:OK
+Result:FAIL
+ls filters files correctly:
+  23-March-2025 15:58:53----ls correctly filters files:OK
+  23-March-2025 15:58:57----ls correctly filters files v2:OK
+Result:PASS
+Recursive ls displays files correctly:
+  23-March-2025 15:59:01----Recursive ls with depth 1 does not capture inner files:OK
+  23-March-2025 15:59:07----Recursive ls with depth 2 captures inner files:OK
+  23-March-2025 15:59:13----Recursive ls supports --d argument before --rec:OK
+Result:PASS
+Advanced Tests:
+  23-March-2025 15:59:19----Recursive ls correctly searches files in sub-directories:OK
+Result:PASS
+Sample echo pipes:
+  23-March-2025 15:59:25----Piping echo to echo works the same as normal echo:NOT OK
+  23-March-2025 15:59:29----Piping echo to echo works the same as normal echo:NOT OK
+Result:FAIL
+Sample ls & cd pipes:
+  23-March-2025 15:59:33----Piping the output of ls to ls works the same as normal ls:NOT OK (TIMEOUT)
+  23-March-2025 15:59:37----Pipes involving cd do not change the current directory:NOT OK
+Result:FAIL
+Sample wc pipe:
+  23-March-2025 15:59:41----Pipe the output of ls to wc displays valid counts:OK
+  23-March-2025 15:59:45----Pipe the output of echo to wc displays valid counts:NOT OK
+Result:FAIL
+Sample cat pipes:
+  23-March-2025 15:59:49----Cat reading input from echo:OK
+  23-March-2025 15:59:53----Cat builtin supports pipes:NOT OK
+Result:FAIL
+Pipes with variables:
+  23-March-2025 15:59:57----Variable declaration in pipes is not reflected:NOT OK (TIMEOUT)
+  23-March-2025 16:00:01----Variable re-define in pipes is not reflected:NOT OK (TIMEOUT)
+Result:FAIL
+Pipes Error Handling:
+  23-March-2025 16:00:05----Pipe line cannot exceed the character limit:OK
+  23-March-2025 16:00:09----A failing command does not stop the pipe chain:NOT OK (TIMEOUT)
+Result:FAIL
+Pipe Edge Cases:
+  23-March-2025 16:00:13----Spaces are not required within pipes:OK
+  23-March-2025 16:00:17----Pipe to a command that does not exist reports unknown error:NOT OK (TIMEOUT)
+Result:FAIL
+Three Level pipes:
+  23-March-2025 16:00:21----Cat builtin supports nested pipes:NOT OK
+  23-March-2025 16:00:25----Three-level pipe with echo, cat, and wc:NOT OK
+Result:FAIL
+Bash Commands are executed correctly:
+  23-March-2025 16:00:29----Bash Builtins are fetched and do not report errors:OK
+  23-March-2025 16:00:33----Command that do not exist report errors:OK
+  23-March-2025 16:00:37----tail command works correctly:OK
+Result:PASS
+Bash Commands support pipes:
+  23-March-2025 16:00:41----tail command supports pipes:NOT OK
+  23-March-2025 16:00:45----head command supports pipes:OK
+Result:FAIL
+Sample bg runs:
+  23-March-2025 16:00:49----A simple background echo correctly completes:NOT OK (TIMEOUT)
+  23-March-2025 16:00:55----Shell can execute other commands while a background process runs:NOT OK (TIMEOUT)
+  23-March-2025 16:01:01----Shell can execute multiple background processes:NOT OK (TIMEOUT)
+Result:FAIL
+Sample ps runs:
+  23-March-2025 16:01:07----ps command shows a background process:NOT OK (TIMEOUT)
+  23-March-2025 16:01:13----ps command shows multiple background processes:NOT OK (TIMEOUT)
+Result:FAIL
+Background jobs finish correctly:
+  23-March-2025 16:01:19----Background process completes with a corresponding DONE message:NOT OK (TIMEOUT)
+  23-March-2025 16:01:26----Background process is DONE after terminated by a kill:NOT OK (TIMEOUT)
+Result:FAIL
+bg edge cases:
+  23-March-2025 16:01:32----Background process counts reset to 1 after all processes complete:NOT OK (TIMEOUT)
+  23-March-2025 16:01:38----Background process line cannot exceed character limits:OK
+Result:FAIL
+bg integrations tests:
+  23-March-2025 16:01:44----Pipes work correctly while background process runs:NOT OK (TIMEOUT)
+Result:FAIL
+Shell survives a control C:
+  23-March-2025 16:01:50----A shell can survive a SIGINT signal:OK
+Result:PASS
+Sample kill runs:
+  23-March-2025 16:01:54----A shell can terminate another shell:OK
+  23-March-2025 16:01:58----A shell can terminate another shell by sending a signal:OK
+Result:PASS
+Kill error handling:
+  23-March-2025 16:02:02----kill reports an error if the pid is invalid:NOT OK
+  23-March-2025 16:02:06----Program reports an error if the signal is invalid:NOT OK
+Result:FAIL
+Kill Integration Tests:
+  23-March-2025 16:02:10----A shell can terminate another shell while accepting variables:OK
+Result:PASS
+23-March-2025 16:02:14--- Tests Passed 26.0/44
+23-March-2025 16:02:14 FINISHED

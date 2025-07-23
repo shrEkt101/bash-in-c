@@ -1,0 +1,13 @@
+21-January-2025 03:39:29---Student: students
+All directories:
+  21-January-2025 03:39:29----Script runs:NOT OK
+Result:FAIL
+Partial Feedbacks:
+  21-January-2025 03:39:29----Script runs:NOT OK
+  21-January-2025 03:39:30----Script runs:NOT OK
+Result:FAIL
+gdb_example check:
+  21-January-2025 03:39:30----gdb_example.txt exists:NOT OK
+Result:FAIL
+21-January-2025 03:39:31--- Suites Passed 0.0/3.0
+21-January-2025 03:39:31 FINISHED

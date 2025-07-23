@@ -1,0 +1,17 @@
+27-January-2025 19:55:30---Student: repo_morisako
+Launch Suite:
+  27-January-2025 19:55:30----Code compiles:OK
+  27-January-2025 19:55:31----Invest with 10000 at 1.05:OK
+  27-January-2025 19:55:31----Invest with 2.5 at 2:OK
+Result:PASS
+Launch Suite:
+  27-January-2025 19:55:32----Code compiles:OK
+  27-January-2025 19:55:32----Phone position=0 and position=5:NOT OK
+Result:FAIL
+Launch Suite:
+  27-January-2025 19:55:33----Code compiles:OK
+  27-January-2025 19:55:33----Score Card with 2 inputs:OK
+  27-January-2025 19:55:34----Score Card with 5 inputs:OK
+Result:PASS
+27-January-2025 19:55:34--- Suites Passed 2.0/3.0
+27-January-2025 19:55:34 FINISHED

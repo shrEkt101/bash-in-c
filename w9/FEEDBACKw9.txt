@@ -1,0 +1,18 @@
+18-March-2025 21:42:37---Student: repo_morisako
+Launch Suite:
+  18-March-2025 21:42:37----Code compiles:NOT OK
+NOT OK
+Result:FAIL
+Launch Suite:
+  18-March-2025 21:42:42----Verify the network newline is detected correctly - single input from client:NOT OK
+  18-March-2025 21:42:43----Verify the network newline is detected correctly - multiple inputs from client:NOT OK
+Result:FAIL
+Launch Suite:
+  18-March-2025 21:42:44----Verify that get message updates int inbuf in read from socket - single newline input:NOT OK
+  18-March-2025 21:42:45----Verify that get message updates int inbuf in read from socket - multiple newline input:NOT OK
+Result:FAIL
+Launch Suite:
+  18-March-2025 21:42:46----Verify that get message updates src and inbuf correctly in get_message - single newline input:NOT OK
+Result:FAIL
+18-March-2025 21:42:47--- Suites Passed 0.0/3.0
+18-March-2025 21:42:47 FINISHED

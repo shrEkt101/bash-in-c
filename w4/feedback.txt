@@ -1,0 +1,17 @@
+04-February-2025 01:26:30---Student: students
+Test ll_sum.c:
+  04-February-2025 01:26:30----Code compiles:OK
+  04-February-2025 01:26:35----Test simple input:OK
+  04-February-2025 01:26:40----Valgrind:NOT OK
+Result:FAIL
+Valgrind output check:
+  04-February-2025 01:26:45----valgrind_output.txt exists:OK
+  04-February-2025 01:26:45----valgrind_output.txt contents:NOT OK
+Result:FAIL
+Test truncate.c:
+  04-February-2025 01:26:46----Code compiles:OK
+  04-February-2025 01:26:46----Test simple input:OK
+  04-February-2025 01:26:46----Test simple input 2:OK
+Result:PASS
+04-February-2025 01:26:47--- Suites Passed 1.0/3.0
+04-February-2025 01:26:47 FINISHED

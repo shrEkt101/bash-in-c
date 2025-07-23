@@ -1,0 +1,11 @@
+27-February-2025 20:13:50---Student: students
+Test parentcreates.c:
+  27-February-2025 20:13:50----Code compiles:OK
+  27-February-2025 20:13:55----Test 3 children:NOT OK
+Result:FAIL
+Test childcreates.c:
+  27-February-2025 20:14:00----Code compiles:NOT OK
+  27-February-2025 20:14:05----Test 3 children - no orphans:NOT OK
+Result:FAIL
+27-February-2025 20:14:10--- Suites Passed 0.0/2.0
+27-February-2025 20:14:10 FINISHED

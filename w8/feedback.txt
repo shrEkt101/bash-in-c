@@ -1,0 +1,13 @@
+13-March-2025 05:23:08---Student: students
+  13-March-2025 05:23:08----Code compiles:OK
+time_reads.c - Test output format:
+  13-March-2025 05:23:08----Test output format:OK
+Result:PASS
+time_reads.c - Test timeout:
+  13-March-2025 05:23:13----Runs for 5 seconds:OK
+Result:PASS
+time_reads.c - Test signal:
+  13-March-2025 05:23:28----Exits on SIGPROF:OK
+Result:PASS
+13-March-2025 05:23:33--- Suites Passed 3.0/3.0
+13-March-2025 05:23:33 FINISHED

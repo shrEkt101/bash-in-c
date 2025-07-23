@@ -1,0 +1,18 @@
+13-February-2025 19:12:19---Student: repo_morisako
+Launch Suite:
+  13-February-2025 19:12:19----Code compiles:NOT OK
+NOT OK
+Result:FAIL
+Launch Suite:
+  13-February-2025 19:12:29----Print blue bmp file:NOT OK
+Result:FAIL
+Launch Suite:
+  13-February-2025 19:12:31----Invert blue bmp file:NOT OK
+  13-February-2025 19:12:34----Invert pattern bmp file:NOT OK
+Result:FAIL
+Launch Suite:
+  13-February-2025 19:12:36----Print new unseen bmp file:NOT OK
+  13-February-2025 19:12:39----Invert new unseen bmp file:NOT OK
+Result:FAIL
+13-February-2025 19:12:41--- Suites Passed 0.0/3.0
+13-February-2025 19:12:41 FINISHED

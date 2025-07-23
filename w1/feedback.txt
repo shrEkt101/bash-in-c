@@ -1,0 +1,11 @@
+13-January-2025 05:11:52---Student: students
+Launch Suite:
+  13-January-2025 05:11:52----Code compiles:OK
+  13-January-2025 05:11:52----Hello with 2 inputs:OK
+  13-January-2025 05:11:53----Hello with 5 inputs:OK
+Result:PASS
+Launch Suite:
+  13-January-2025 05:11:53----bashrc exists:OK
+Result:PASS
+13-January-2025 05:11:54--- Suites Passed 2.0/2.0
+13-January-2025 05:11:54 FINISHED

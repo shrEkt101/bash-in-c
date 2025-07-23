@@ -1,0 +1,108 @@
+23-March-2025 16:09:08---Student: src
+23-March-2025 16:09:08----Code compiles:PASS
+Launch Suite:
+  23-March-2025 16:09:08----exit causes process to terminate with correct return code:OK
+  23-March-2025 16:09:09----Shell message is displayed, uses exit to test:OK
+Result:PASS
+Unknown Command Message:
+  23-March-2025 16:09:10----Unknown command should display corresponding message:OK
+  23-March-2025 16:09:11----Multiple unknown commands:OK
+Result:PASS
+Long Command Message:
+  23-March-2025 16:09:12----A not-too-long and legal command input is valid:OK
+  23-March-2025 16:09:13----Long command input is invalid:OK
+  23-March-2025 16:09:14----Long command message takes priority:OK
+Result:PASS
+Echo Simple Messages:
+  23-March-2025 16:09:15----Echo of one character displays correctly:OK
+  23-March-2025 16:09:16----Echo of simple message displays correctly:OK
+  23-March-2025 16:09:17----Echo of simple message displays correctly v3:OK
+  23-March-2025 16:09:18----Echo of simple message displays correctly v3:OK
+  23-March-2025 16:09:19----Echo of simple message does not show errors:OK
+Result:PASS
+Echo Special Characters:
+  23-March-2025 16:09:20----Echo of mixed message displays correctly:OK
+  23-March-2025 16:09:21----echo with quotes has no special meaning:OK
+  23-March-2025 16:09:22----echo ignores extra spaces:OK
+Result:PASS
+Multiple Commands:
+  23-March-2025 16:09:23----Two echo commands display correctly:OK
+  23-March-2025 16:09:24----Two echo commands do not show error:OK
+  23-March-2025 16:09:25----Echo commands work while other commands error:OK
+Result:PASS
+Simple variables accesses:
+  23-March-2025 16:09:26----Declare and access a single variable:OK
+  23-March-2025 16:09:27----Declare and access a single variable:OK
+  23-March-2025 16:09:27----Tests for correct evaluation of variable expansions containing only intitialized variables:OK
+  23-March-2025 16:09:28----Tests for correct evaluation of variable expansions containing variables plus plaintext and uninitialized variables:OK
+Result:PASS
+Variable integration with other commands:
+  23-March-2025 16:09:28----Declare a single variable:OK
+  23-March-2025 16:09:29----Declare and access two variables:OK
+Result:PASS
+Custom variable accesses:
+  23-March-2025 16:09:29----Access variables in separate lines:OK
+  23-March-2025 16:09:30----Access variables in separate lines v2:OK
+Result:PASS
+Echo without variables displays plain text:
+  23-March-2025 16:09:30----Variables access with $ is bound to name:OK
+  23-March-2025 16:09:31----Non-existing variable displays as an empty string:OK
+Result:PASS
+Variable values can be redefined:
+  23-March-2025 16:09:31----Variable value is redefined appropriately:OK
+  23-March-2025 16:09:32----Variable value is redefined appropriately v2:OK
+Result:PASS
+Variable formatting edge cases:
+  23-March-2025 16:09:32----Variables accesses separate by the first equal:OK
+  23-March-2025 16:09:33----Variable declaration with spaces is not supported:OK
+Result:PASS
+Advanced tests:
+  23-March-2025 16:09:33----Declare and access 100 variables:OK
+Result:PASS
+correct cat argument setup:
+  23-March-2025 16:09:37----Cat on a file that contains one word:OK
+  23-March-2025 16:09:38----cat without a file reports an error:OK
+Result:PASS
+cat correctly reads sample files:
+  23-March-2025 16:09:39----Cat on a file that contains multiple words:OK
+  23-March-2025 16:09:40----Cat on a file that contains multiple lines:OK
+Result:PASS
+correct wc argument setup:
+  23-March-2025 16:09:41----wc on an empty file:OK
+  23-March-2025 16:09:42----wc without a filename reports an error:OK
+Result:PASS
+wc reports correct counts on sample files:
+  23-March-2025 16:09:43----wc on a file that contains mutliple lines:OK
+  23-March-2025 16:09:44----wc on a file that contains mutliple words in a line:OK
+  23-March-2025 16:09:45----wc on a file that contains blank lines:OK
+Result:PASS
+Sample ls runs:
+  23-March-2025 16:09:46----Create a single sub-directory with a single file:OK
+  23-March-2025 16:09:47----Create a single sub-directory with multiple files:OK
+  23-March-2025 16:09:53----ls a directory:OK
+Result:PASS
+Sample cd runs:
+  23-March-2025 16:09:59----cd into a directory and display the files:OK
+  23-March-2025 16:10:05----cd into a nested directory and display the files:OK
+Result:PASS
+ls error handling:
+  23-March-2025 16:10:11----ls on an invalid path reports an error:NOT OK
+Result:FAIL
+ls handles edge cases correctly:
+  23-March-2025 16:10:12----ls a single file through a variable identifier:NOT OK (TIMEOUT)
+  23-March-2025 16:10:13----Create a single sub-directory, and ls into that directory:OK
+Result:FAIL
+ls filters files correctly:
+  23-March-2025 16:10:14----ls correctly filters files:OK
+  23-March-2025 16:10:15----ls correctly filters files v2:OK
+Result:PASS
+Recursive ls displays files correctly:
+  23-March-2025 16:10:16----Recursive ls with depth 1 does not capture inner files:OK
+  23-March-2025 16:10:22----Recursive ls with depth 2 captures inner files:OK
+  23-March-2025 16:10:28----Recursive ls supports --d argument before --rec:OK
+Result:PASS
+Advanced Tests:
+  23-March-2025 16:10:34----Recursive ls correctly searches files in sub-directories:OK
+Result:PASS
+23-March-2025 16:10:40--- Test Suites Passed 23.0/25
+23-March-2025 16:10:40 FINISHED
